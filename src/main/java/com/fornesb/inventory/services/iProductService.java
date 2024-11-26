@@ -5,7 +5,7 @@ import com.fornesb.inventory.model.Product;
 import java.util.List;
 
 public interface iProductService {
-    public List<Product> listProducts();
+    public List<Product> listAllProducts();
 
     public Product searchProductById(Integer idProduct);
 
