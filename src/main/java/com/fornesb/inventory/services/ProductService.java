@@ -23,11 +23,13 @@ public class ProductService implements iProductService{
 
     @Override
     public void saveProduct(Product product) {
-
+        this.ProductRepository.save(product);
+        System.out.println("Product saved successfully...");
     }
 
     @Override
-    public void deleteProduct(Product product) {
-
+    public void deleteProduct(Integer idProduct) {
+        this.ProductRepository.deleteById(idProduct);
+        System.out.println("Product deleted successfully...");
     }
 }

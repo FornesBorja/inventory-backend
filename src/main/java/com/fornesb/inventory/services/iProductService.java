@@ -11,5 +11,5 @@ public interface iProductService {
 
     public void saveProduct (Product product);
 
-    public void deleteProduct (Product product);
+    public void deleteProduct (Integer idProduct);
 }
